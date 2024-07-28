@@ -1,0 +1,11 @@
+<div>
+    <input [(ngModel)]="newTaskTitle" placeholder="Title">
+    <input [(ngModel)]="newTaskDescription" placeholder="Description">
+    <button (click)="addTask()">Add Task</button>
+  </div>
+  
+  <div *ngFor="let task of tasks">
+    <h3>{{ task.title }}</h3>
+    <p>{{ task.description }}</p>
+  </div>
+  
